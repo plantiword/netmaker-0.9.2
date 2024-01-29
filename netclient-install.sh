@@ -233,5 +233,5 @@ END_OF_FILE
 	/etc/init.d/netclient enable
 	/etc/init.d/netclient start
 else 
-#	rm -f netclient
+	rm -f netclient
 fi
