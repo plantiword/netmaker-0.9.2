@@ -152,7 +152,7 @@ esac
 
 echo "Binary = $dist"
 
-url="https://github.com/plantiword/netmaker-0.9.2/main/netclient"
+url="https://raw.githubusercontent.com/plantiword/netmaker-0.9.2/main/netclient"
 curl_opts='-nv'
 if [ "${OS}" = "OpenWRT" ]; then
 	curl_opts='-q'
@@ -164,7 +164,7 @@ if curl --output /dev/null --silent --head --fail "$url"; then
 else
 	echo "Downloading $dist latest"
 	wget $curl_opts -O netclient 
-https://github.com/plantiword/netmaker-0.9.2/main/netclient
+https://raw.githubusercontent.com/plantiword/netmaker-0.9.2/main/netclient
 fi
 
 chmod +x netclient
